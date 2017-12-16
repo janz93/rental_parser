@@ -1,0 +1,11 @@
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+  Enabled: true
+
+Style/Documentation:
+  Description: 'Document classes and non-namespace modules.'
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - "spec/model/listing_services/rent_in_riga_spec.rb"

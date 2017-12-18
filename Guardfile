@@ -39,4 +39,7 @@ guard :rspec, cmd: "bundle exec rspec" do
   # Ruby files
   ruby = dsl.ruby
   dsl.watch_spec_files_for(ruby.lib_files)
+
+  # Ruby model files
+  dsl.watch_spec_files_for(%r{^(model/.+)\.rb$})
 end
